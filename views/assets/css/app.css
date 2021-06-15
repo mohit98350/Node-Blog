@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blackColor:#000;
+    --whiteColor: #ffff;
+    --whiteLight: #fcfcfc;
+    --green1:#2ecc71;
+    --green2:#badc58;
+    --redLight:#f8aeae;
+    --redDark: #622d2d;
+
+
+}
+body{
+    background: --var(--whiteLight);
+    font-family: 'Raleway', sans-serif;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: var(--whiteColor);
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.1);
+    padding: 0 100px;
+}
+.nav ul{
+    list-style: none;
+}
+.nav ul li {
+    display: inline-block;
+}
+.nav ul li a{
+    text-decoration: none;
+    display: flex;
+    color: var(--blackColor);
+    padding: 0 15px;
+    font-size: 20px;
+    color: var(--green1);
+   
+    
+}
+.left-nav{
+    width: 50%;
+    
+}
+.right-nav{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+/* FORM STYLES*/
+.form-row{
+    display: flex;
+    height: calc(100vh - 70px);
+}
+.left-side{
+    width: 60%;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+   
+}
+.right-side{
+    width: 40%;
+}
+.form-container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.errors{
+    width: 70%;
+    padding: 14px 18px;
+    margin-bottom: 6px;
+    background: var(--redLight);
+    color: var(--redDark);
+    border-left: 4px solid var(--redDark);
+}
+.alert-success{
+    width: 70%;
+    padding: 14px 18px;
+    margin-bottom: 6px;
+    background: var(--green2);
+    color: var(--whiteColor);
+    border-left: 4px solid var(--green1);
+    font-size: 18px;
+}
+.error{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 4px;
+    
+    
+}
+.accountForms{
+    width: 70%;
+    background: var(--whiteColor);
+    border-radius: 3px;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.1);
+    padding: 25px;
+    
+}
+label{
+    display: block;
+    color: silver;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+.group{
+    margin: 7px 0;
+}
+.control{
+    width: 100%;
+    padding: 13px 11px;
+    border: none;
+    outline: none;
+    background: var(--whiteLight);
+    border-left: 4px solid var(--green1);
+    margin-bottom: 7px;
+    
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.btn-sweet{
+    padding: 20px 7px;
+    width: 100%;
+    color: var(--whiteColor);
+    background: linear-gradient(to right,var(--green1),var(--green2));
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.btn-warning{
+    padding: 10px 20px;
+    display: inline-block;
+    color: var(--whiteColor);
+    font-size: 13px;
+    background: linear-gradient(to right ,#FFC107,#FF5722);
+    border-radius: 35px;
+}
+.btn-danger{
+    padding: 10px 20px;
+    display: inline-block;
+    color: var(--whiteColor);
+    font-size: 13px;
+    background: linear-gradient(to right ,#F44336,#E91E63);
+    border-radius: 35px;
+}
+.group h3{
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.log_name{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px,5px;
+  right: -40px;
+  top: -10px;
+  width: 40px;
+  height: 40px;
+  background: var(--green2);
+ border-radius: 50%;
+  color: var(--white);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 550;
+  color: var(--whiteColor);
+  
+}
+
+.logout{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.profile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+}
+.profileCard{
+    width: 400px;
+    background: var(--whiteColor);
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.1);
+    border-bottom: 4px solid var(--green1);
+}
+.profileCard span{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to right,var(--green1),var(--green2));
+    border-radius: 55%;
+    justify-content: center;
+    align-items: center;
+    color: var(--whiteColor);
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+.profileName{
+    margin: 12px 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.profileEmail{
+    font-size: 18px;
+}
+.postFormContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    flex-direction: column;
+    
+
+}
+.postFormContainer form{
+    width: 700px;
+    background: var( --whiteColor);
+    padding: 25px;
+}
+.errors-helper{
+    width: 650px;
+}
+#imageLabel{
+    display: none;
+
+}
+.fileLabel{
+    width: 100%;
+    padding: 13px 11px;
+    border: 1px solid var(--green1);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    color:var(--green1);
+
+}
+.input_post{
+height: 100px!important;
+}
+
+#header{
+    width: 100%;
+    padding: 0 104px;
+    height: 350px;
+    margin-top: 20px;
+}
+.bannerImage{
+    width: 100%;
+    background: url("../img/pexels-mohamed-almari-368893.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    background-color: rgba(0, 0,0, 0.7);
+    background-blend-mode: overlay;
+    color:var(--whiteColor);
+    align-items: center;
+    justify-content: center;
+}
+.bannerImage div{
+    width: 500px;
+}
+.bannerImage div h1{
+    font-size: 40px;
+}
+.bannerImage div p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.msg{
+    margin: 50px 0;
+    
+}
+.p-20{
+    padding: 20px;
+}
+.x-center{
+    justify-content: center;
+}
+.container{
+    padding: 0 104px;
+}
+/* post*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col-3{
+    width: 25%;
+}
+.col-6{
+    width: 50%;
+}
+.post{
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0, 0,0, 0.2);
+    text-align: center;
+}
+.postImg{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    
+}
+.postImg img{
+    width: 100%;
+    height: 150px;
+    transition: all .5s linear;
+
+}
+.postImg img:hover{
+    transform:scale(1.5)
+}
+.postTitle{
+    margin: 13px 8px;
+    height: 50px;
+}
+.postTitle h4 a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+.postBody{
+    padding: 14px 8px;
+
+}
+.postFooter{
+    width: 100%;
+    padding: 8px ;
+    display: flex;
+    border-bottom: 4px solid  var(--green1);
+
+}
+.creator{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+
+}
+.postTime{
+    width: 50%;
+    text-align: right;
+}
+/* pagination */
+.pagination{
+    width: 100%;
+    margin: 20px 0;
+}
+.pagination ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.pagination ul li a{
+    text-decoration: none;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right,var(--green1),var(--green2));
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--whiteColor);
+    margin: 0 7px;
+    font-weight: 500;
+    font-size: 17px;
+    border: 1px solid transparent;
+
+}
+.prev{
+    font-size: 14px!important;
+}
+.active{
+    background: transparent!important;
+    border: 1px solid var(--green1)!important;
+    color: var(--green1)!important;
+}
+.details{
+    width: 100%;
+    margin: 30px 0;
+}
+.details-link{
+    margin-top: 76px;
+    padding: 0 14px;
+    background: var(--whiteLight);
+    border-bottom: 1px solid #fafafa;
+}
+.details-title{
+    padding: 15px 14px;
+    background: var(--whiteColor);
+}
+.details-img{
+    width: 100%;
+}
+.details-img img{
+    width: 100%;
+}
+.details-p{
+    padding: 15px 14px;
+    background: var(--whiteColor);
+}
+.No-post{
+    text-align: center;
+    font-size: 40px;
+    color: var(--redDark);
+}
+
+/* Media Query*/
+
+@media(max-width:765px){
+   .left-side{
+       width: 0;
+   }
+   .right-side{
+       width: 100%;
+   }
+   .nav{
+       flex-direction: row;
+       height: auto;
+   }
+   .nav ul li{
+       display: block;
+   }
+   .nav ul li a{
+       
+       padding: 10px 24px;
+       
+   }
+   .container{
+       padding: 0 40px;
+   }
+   .right-nav{
+       justify-content: flex-start;
+      
+   }
+   #header{
+    
+    padding: 0 40px;
+    
+    }
+   .logout{
+       margin-left: -80px;
+       margin-top: 40px;
+   }
+   .log_name{
+    margin-left: 160px;
+    margin-bottom: 105px;
+   }
+   .bannerImage div{
+    width: 100%px;
+    padding: 0 40px;
+}
+.bannerImage div h1{
+    font-size: 25px;
+}
+.bannerImage div p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.col-3{
+    width: 50%;
+}
+   .col-6{
+       width: 100%;
+   }
+   
+.postFormContainer form {
+    width: 500px;    
+
+    
+}
+.errors.errors-helper{
+    width: 70%;
+    padding: 36px;
+    overflow: hidden;
+    
+}
+.errors-helper{
+    width:70%;
+}
+
+
+
+   
+}
+@media(max-width:600px){
+.col-3{
+    width: 100%;
+}
+.postFormContainer form {
+    width: 280px;    
+
+    
+}
+.home{
+    margin-left: -50px;
+}
+.errors.errors-helper{
+    width: 70%;
+    padding: 36px;
+    overflow: hidden;
+    
+}
+.errors-helper{
+    width:70%;
+}
+.log_name{
+    margin-left: 160px;
+    margin-bottom: 110px;
+   }
+   .home{
+    margin-left: -50px;
+}
+.login{
+    margin-left: 80px;
+}
+.nav ul li a{
+    font-size: 15px;
+}
+.home{
+    margin-left: 1px;
+}
+.log_name{
+    margin-left: 100px;
+    margin-bottom: 80px;
+   }
+   .logout{
+       margin-left: -70px;
+   }
+
+}
+@media(max-width:460px){
+    .log_name{
+        margin-left: 100px;
+        margin-bottom: 120px;
+        margin-top: 10px;
+       }
+       .logout{
+           margin-right: 70px;
+           margin-bottom: 40px;
+           margin-left: -45px;
+           
+       }
+       
+       .login{
+        margin-left: 14px;
+    }
+
+     
+}
+@media(max-width:400px){
+.nav ul li a{
+    font-size: 10px;
+    padding: 10px;
+    
+}
+.home{
+    margin-left: 1px;
+}
+.log_name{
+    margin-left: 100px;
+    margin-bottom: 80px;
+   }
+   .nav ul li a{
+       font-size: 11px;
+   }
+   .logout{
+       margin-left: -50px;
+   }.login{
+       margin-left: 14px;
+   }
+}

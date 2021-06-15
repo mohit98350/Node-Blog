@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%- title%>
+    </title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/img/BLOG.png" type="image/png"/>
+</head>
+
+<body>
+    <%- include("components/nav.ejs")%>
+        <header id="header">
+            <div class="bannerImage">
+                <div>
+                    <h1><span style=" color:white; ">India best
+                        </span> <span style=" color: darkred; ">
+                            news place</span></h1>
+                    <p><span style="font-style: italic; font-size: 22px; color: darkred; "> why use fifty words
+                            if</span> <span style="font-style:italic; font-size: 22px;color: white;">you can say it in
+                            eleven?</span></p>
+                </div>
+
+            </div>
+
+        </header>
+        <%- include("components/postDetails.ejs")%>
+
+</body>
+
+</html>
